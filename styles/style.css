@@ -1,0 +1,325 @@
+/* Style général pour les textes */
+:root {
+    --main-text-color: #333; /* Texte noir pour mode clair */
+    --secondary-text-color: #555; /* Texte gris pour mode clair */
+}
+
+body.dark-mode {
+    --main-text-color: #f8f9fa; /* Texte blanc pour mode sombre */
+    --secondary-text-color: #e0e0e0; /* Texte gris clair pour mode sombre */
+}
+
+/* ================================ HEADER et MENU DE NAVIGATION ================================ */
+header {
+    box-shadow: 0 2px 4px rgb(165, 164, 164);
+}
+
+.navbar-brand img {
+    border-radius: 50%;
+}
+
+.navbar-nav .nav-link {
+    font-weight: bold;
+    color: #333;
+}
+
+.navbar-nav .nav-link:hover {
+    color: rgb(165, 164, 164);
+}
+
+
+/* ================================ PAGE D'ACCUEIL ================================ */
+#accueil {
+    background-color: #f8f9fa; /* Fond clair */
+    color: #333;
+    padding: 50px 0;
+}
+
+#accueil img {
+    max-width: 200px;
+    border: 5px solid rgb(165, 164, 164); /* Bordure autour de la photo */
+}
+
+#accueil h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(165, 164, 164);
+}
+
+#accueil p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+#accueil .btn-primary {
+    background-color: rgb(165, 164, 164);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#accueil .btn-primary:hover {
+    background-color: rgb(165, 164, 164);
+}
+
+/* Style du bouton en mode sombre */
+body.dark-mode .btn-primary {
+    background-color: #6c757d; /* Une teinte de gris */
+    border-color: #6c757d;    /* Harmoniser avec le fond */
+    color: #ffffff;           /* Texte blanc */
+}
+
+body.dark-mode .btn-primary:hover {
+    background-color: #5a6268; /* Gris plus foncé au survol */
+    border-color: #5a6268;
+}
+
+
+/* ================================ PROJETS ================================ */
+/* Section Projets */
+#projets {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+}
+
+#projets h2 {
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+/* Style des cartes */
+.card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Boutons Voir plus */
+.btn-dark {
+    background-color: rgb(165, 164, 164);
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-dark:hover {
+    background-color: rgb(165, 164, 164);
+    transform: scale(1.05);
+}
+
+/* Modals */
+.modal-header {
+    background-color: rgb(165, 164, 164);
+    color: #fff;
+}
+
+.modal-title {
+    font-size: 1.5rem;
+}
+
+.modal-body img,
+.modal-body video {
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+/* Effet de survol pour les cartes */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Changement du curseur sur les cartes */
+.card {
+    cursor: pointer;
+}
+
+/* ================================ COMPETENCES ================================ */
+/* Section Compétences */
+#competences {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+}
+
+#competences h2 {
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+/* Cartes des catégories */
+.card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Uniformiser la taille des logos */
+.logo-icon {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin: 10px auto;
+}
+
+/* Collapse */
+.collapse .row {
+    margin-top: 20px;
+}
+
+/* ================================ À PROPOS DE MOI ================================ */
+#a-propos {
+    background-color: var(--secondary-text-color); /* Fond dynamique */
+}
+
+#presentation h2 {
+    color: var(--main-text-color);
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.card-header {
+    border-radius: 0;
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: var(--main-text-color); /* Texte dynamique */
+}
+
+.timeline-item {
+    margin-bottom: 20px;
+}
+
+.timeline-item h5 {
+    color: var(--main-text-color); /* Texte dynamique */
+}
+
+.timeline-item p {
+    margin: 0;
+    color: var(--secondary-text-color); /* Texte dynamique */
+}
+
+
+/* ================================ CONTACT ================================ */
+#contact {
+    background-color: #f8f9fa;
+}
+
+#contact h2 {
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+#contact .btn-primary {
+    background-color: #6c757d;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+#contact .btn-primary:hover {
+    background-color: #333;
+}
+
+#contact i {
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+#contact i:hover {
+    color: #0d6efd;
+}
+
+/* ================================ FOOTER ================================ */
+footer {
+    background-color: #212529; /* Couleur sombre */
+    color: #f8f9fa; /* Texte blanc cassé */
+}
+
+footer a:hover {
+    color: #0dcaf0; /* Couleur bleu clair au survol */
+}
+
+footer h5 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* ================================ RESPONSIVE ================================ */
+/* Images et vidéos responsives */
+img,
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Navbar responsive */
+.navbar-nav {
+    justify-content: center;
+}
+
+.navbar-brand img {
+    max-width: 80px; /* Ajuste la taille du logo pour mobile */
+    height: auto;
+}
+
+.card-img-top {
+    height: auto; /* Permet à l'image des cartes de s'adapter */
+}
+
+footer ul {
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* ================================ DARK MODE ================================ */
+/* Mode sombre */
+body.dark-mode {
+    background-color: #121212;
+    color: #f8f9fa;
+}
+
+body.dark-mode .btn-primary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    color: #ffffff;
+}
+
+body.dark-mode .navbar {
+    background-color: #1f1f1f;
+}
+
+body.dark-mode .card {
+    background-color: #1f1f1f;
+    color: #f8f9fa;
+}
+
+body.dark-mode .modal-content {
+    background-color: #1f1f1f;
+    color: #f8f9fa;
+}
+
+body.dark-mode footer {
+    background-color: #1f1f1f;
+    color: #f8f9fa;
+}
+
+
